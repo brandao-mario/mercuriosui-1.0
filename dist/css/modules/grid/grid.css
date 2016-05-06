@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* 
+*----------------------------------------
+*	0. Reset -meyerweb
+*----------------------------------------
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 
+*----------------------------------------
+*	0.5. Variáveis
+*----------------------------------------
+*/
+/* Grid */
+/* 
+*----------------------------------------
+*	1. Grid
+*----------------------------------------
+*/
+/* Border boxing */
+.container, .wrapper, [class*="sm-ui-"],
+[class*="md-ui-"], [class*="lg-ui-"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Centering */
+  text-align: center; }
+
+/* Display inline-block for centering */
+.wrapper, [class*="sm-ui-"],
+[class*="md-ui-"], [class*="lg-ui-"] {
+  display: inline-block; }
+
+/* Mobile First */
+.container {
+  float: left;
+  width: 100%;
+  padding: 0 1%; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1%;
+  margin: 0 auto;
+  clear: both; }
+
+/* Grid Mobile */
+[class*="sm-ui-"] {
+  margin: 1.5%;
+  padding: 0 1%;
+  float: left;
+  min-height: 20px;
+  background: red; }
+
+.sm-ui-12 {
+  width: 97%; }
+
+.sm-ui-11 {
+  width: 88.667%; }
+
+.sm-ui-10 {
+  width: 80.334%; }
+
+.sm-ui-9 {
+  width: 72%; }
+
+.sm-ui-8 {
+  width: 63.667%; }
+
+.sm-ui-7 {
+  width: 55.334%; }
+
+.sm-ui-6 {
+  width: 47%; }
+
+.sm-ui-5 {
+  width: 38.668%; }
+
+.sm-ui-4 {
+  width: 30.335%; }
+
+.sm-ui-3 {
+  width: 22%; }
+
+.sm-ui-2 {
+  width: 13.667%; }
+
+.sm-ui-1 {
+  width: 5.335%; }
+
+/* Tablet e maiores */
+@media (min-width: 768px) {
+  /* Grid Tablet */
+  [class*="md-ui-"] {
+    margin: 1.5%;
+    padding: 0 1%;
+    float: left;
+    min-height: 20px;
+    background: red; }
+  .md-ui-12 {
+    width: 97%; }
+  .md-ui-11 {
+    width: 88.667%; }
+  .md-ui-10 {
+    width: 80.334%; }
+  .md-ui-9 {
+    width: 72%; }
+  .md-ui-8 {
+    width: 63.667%; }
+  .md-ui-7 {
+    width: 55.334%; }
+  .md-ui-6 {
+    width: 47%; }
+  .md-ui-5 {
+    width: 38.668%; }
+  .md-ui-4 {
+    width: 30.335%; }
+  .md-ui-3 {
+    width: 22%; }
+  .md-ui-2 {
+    width: 13.667%; }
+  .md-ui-1 {
+    width: 5.335%; } }
+
+/* Desktop e maiores */
+@media (min-width: 1025px) {
+  /* Grid desktop */
+  [class*="lg-ui-"] {
+    margin: 1.5%;
+    padding: 0 1%;
+    float: left;
+    min-height: 20px;
+    background: red; }
+  .lg-ui-12 {
+    width: 97%; }
+  .lg-ui-11 {
+    width: 88.667%; }
+  .lg-ui-10 {
+    width: 80.334%; }
+  .lg-ui-9 {
+    width: 72%; }
+  .lg-ui-8 {
+    width: 63.667%; }
+  .lg-ui-7 {
+    width: 55.334%; }
+  .lg-ui-6 {
+    width: 47%; }
+  .lg-ui-5 {
+    width: 38.668%; }
+  .lg-ui-4 {
+    width: 30.335%; }
+  .lg-ui-3 {
+    width: 22%; }
+  .lg-ui-2 {
+    width: 13.667%; }
+  .lg-ui-1 {
+    width: 5.335%; } }
+
+/* Desktop HD e maiores*/
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1400px; } }

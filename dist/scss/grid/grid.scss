@@ -1,0 +1,249 @@
+/* 
+*----------------------------------------
+*	0. Reset -meyerweb
+*----------------------------------------
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+*----------------------------------------
+*	0.5. Variáveis
+*----------------------------------------
+*/
+
+/* Grid */
+$grid-gutter: 1.5%;
+$small: sm-ui-;
+$medium: md-ui-;
+$large: lg-ui-;
+
+/* 
+*----------------------------------------
+*	1. Grid
+*----------------------------------------
+*/
+
+/* Border boxing */
+.container, .wrapper, [class*="sm-ui-"],
+[class*="md-ui-"], [class*="lg-ui-"]{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	/* Centering */
+	text-align: center;
+}
+
+/* Display inline-block for centering */
+.wrapper, [class*="sm-ui-"],
+[class*="md-ui-"], [class*="lg-ui-"]{
+	display: inline-block;
+}
+
+/* Mobile First */
+.container{
+	float: left;
+	width: 100%;
+	padding: 0 1%;
+}
+
+.wrapper{
+	width: 100%;
+    max-width: 1200px;
+	padding: 0 1%;
+	margin: 0 auto;
+	clear: both;
+}
+
+/* Grid Mobile */
+[class*="sm-ui-"]{
+	margin: $grid-gutter; 
+	padding: 0 1%;
+	float: left;
+	min-height: 20px;
+    background: red;
+}
+.#{$small}12{
+	width: 97%;
+}
+.#{$small}11{
+    width: 88.667%;
+}
+.#{$small}10{
+    width: 80.334%;
+}
+.#{$small}9{
+    width: 72%;
+}
+.#{$small}8{
+    width: 63.667%;
+}
+.#{$small}7{
+    width: 55.334%;
+}
+.#{$small}6{
+    width: 47%;
+}
+.#{$small}5{
+    width: 38.668%;
+}
+.#{$small}4{
+    width: 30.335%;
+}
+.#{$small}3{
+    width: 22%;
+}
+.#{$small}2{
+    width: 13.667%;
+}
+.#{$small}1{
+    width: 5.335%;
+}
+
+/* Tablet e maiores */
+@media (min-width: 768px){
+    /* Grid Tablet */
+    [class*="md-ui-"]{
+        margin: $grid-gutter; 
+        padding: 0 1%;
+        float: left;
+        min-height: 20px;
+        background: red;
+    }
+    .#{$medium}12{
+        width: 97%;
+    }
+    .#{$medium}11{
+        width: 88.667%;
+    }
+    .#{$medium}10{
+        width: 80.334%;
+    }
+    .#{$medium}9{
+        width: 72%;
+    }
+    .#{$medium}8{
+        width: 63.667%;
+    }
+    .#{$medium}7{
+        width: 55.334%;
+    }
+    .#{$medium}6{
+        width: 47%;
+    }
+    .#{$medium}5{
+        width: 38.668%;
+    }
+    .#{$medium}4{
+        width: 30.335%;
+    }
+    .#{$medium}3{
+        width: 22%;
+    }
+    .#{$medium}2{
+        width: 13.667%;
+    }
+    .#{$medium}1{
+        width: 5.335%;
+    }
+}
+/* Desktop e maiores */
+@media (min-width: 1025px){
+    /* Grid desktop */
+    [class*="lg-ui-"]{
+        margin: $grid-gutter; 
+        padding: 0 1%;
+        float: left;
+        min-height: 20px;
+        background: red;
+    }
+    .#{$large}12{
+        width: 97%;
+    }
+    .#{$large}11{
+        width: 88.667%;
+    }
+    .#{$large}10{
+        width: 80.334%;
+    }
+    .#{$large}9{
+        width: 72%;
+    }
+    .#{$large}8{
+        width: 63.667%;
+    }
+    .#{$large}7{
+        width: 55.334%;
+    }
+    .#{$large}6{
+        width: 47%;
+    }
+    .#{$large}5{
+        width: 38.668%;
+    }
+    .#{$large}4{
+        width: 30.335%;
+    }
+    .#{$large}3{
+        width: 22%;
+    }
+    .#{$large}2{
+        width: 13.667%;
+    }
+    .#{$large}1{
+        width: 5.335%;
+    }
+}
+/* Desktop HD e maiores*/
+@media (min-width: 1200px){
+    .wrapper{
+        max-width: 1400px;
+    }
+}
